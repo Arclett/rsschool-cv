@@ -7,29 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/img/favicon.ico"/>
+    <link rel="icon" href="assets/svg/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1>Aleksei Stoyanenko</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <nav-item><a href="#contacts" class="nav-link">Contacts</a></nav-item>
+                <nav-item><a href="#summary" class="nav-link">Summary</a></nav-item>
+                <nav-item><a href="#skills" class="nav-link">Skills</a></nav-item>
+                <nav-item><a href="#code" class="nav-link">Code Example</a></nav-item>
+                <nav-item><a href="#courses" class="nav-link">Courses</a></nav-item>
+                <nav-item><a href="#projects" class="nav-link">Projects</a></nav-item>
+                <nav-item><a href="#education" class="nav-link">Education</a></nav-item>
+                <nav-item><a href="#english" class="nav-link">English</a></nav-item>
+            </ul>
+        </nav>
+        <section class="header-content">
+            <h1>Aleksei Stoyanenko</h1><img src="assets/img/avatar.JPG">
+        </section>
     </header>
     <main class="main">
-        <div class="container">
-            <h2>Contacts</h2>
+        <div class="container" id="contacts">
+            <h2 class="contacts">Contacts</h2>
             <ul>
-                <li><p>Discord: <a href="" title="Discord profile">Arclet#0589</a></p></li>
-                <li><p>E-mail: <a href="" title="E-mail">stoynalex@gmail.com</a></p></li>
-                <li><p>Telegram: <a href="https://t.me/alexchel93" title="Telegram profile" alt="Telegram profile link">@alexchel93</a></p></li>
-                <li><p>GitHub: <a href="https://github.com/Arclett" title="GitHub profile" alt="GitHub profile">Arclett</a></p></li>
+                <li class="contact-item"><p>Discord: <a href="" title="Discord profile">Arclet#0589</a></p></li>
+                <li class="contact-item"><p>E-mail: <a href="mailto:stoynalex@gmail.com" title="E-mail">stoynalex@gmail.com</a></p></li>
+                <li class="contact-item"><p>Telegram: <a href="https://t.me/alexchel93" title="Telegram profile" alt="Telegram profile link">@alexchel93</a></p></li>
+                <li class="contact-item"><p>GitHub: <a href="https://github.com/Arclett" title="GitHub profile" alt="GitHub profile">Arclett</a></p></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container" id="summary">
             <h2>Summary</h2>
             <p>I am currently working as an ultrasound specialist. And I want to try myself as Front-End Developer.</p>
         </div>
-        <div class="container">
+        <div class="container" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>HTML5, CSS3</li>
@@ -37,7 +51,7 @@
                 <li>VS Code</li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container" id="code">
             <h2>Code Example</h2>
             <pre><code class="code">
                 const assert = require("chai").assert;
@@ -51,22 +65,22 @@
                 });
             </code></pre>
         </div>
-        <div class="container">
+        <div class="container" id="projects">
             <h2>Projects</h2>
             <p><i>Nothing yet…</i></p>
         </div>
-        <div class="container">
+        <div class="container" id="courses">
             <h2>Courses</h2>
             <ul>
                 <li>FreeCodeCamp Responsive Web Design: <i>in progress</i></li>
                 <li>HTML Academy</li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container" id="education">
             <h2>Education</h2>
             <p>South Ural State Medical University</p>
         </div>
-        <div class="container">
+        <div class="container" id="english">
             <h2>English</h2>
             <ul>
                 <li>Russian - native speaker</li>
@@ -75,6 +89,8 @@
         </div>
         <div class="container"></div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <a href="https://rs.school/js/" title="JavaScript/Front-End Course"><img class="footer-link" src="assets/img/rs_school_js.svg"></a>
+    </footer>
 </body>
 </html>
