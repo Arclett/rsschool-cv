@@ -5,20 +5,17 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     background-color: blanchedalmond;
-    align-content: center;
+    align-items: center;
     margin: 5vh 2vw;
 }
 
-.code {
-    display:block;
-    width:fit-content;
-}
 .contact-item {
     position: relative;
     padding-left: 30px;
@@ -62,7 +59,6 @@ body {
 }
 
 .container {
-    display: inline-block;
     width: 45%;
     min-width: 300px;
     height: 40%;
@@ -71,8 +67,9 @@ body {
     margin: 5px 0px;
     padding-left: 5px;
 }
+
 .header {
-    height: 40vh;
+    min-height: 40vh;
     width: 90vw;
     margin: 1vh auto;
     background: linear-gradient(180deg, chocolate, 90%, blanchedalmond);
@@ -80,24 +77,45 @@ body {
     
 }
 
-.header-content {
+.header-conteiner {
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     margin: 1vh 5vw;
-    height:18vh;
+    min-height:18vh;
     font-size: 2em;
+    object-fit: contain;
+}
+
+.avatar {
+    height: 200px;
+    border-radius: 25%;
+    border: 5px solid bisque;
 }
 
 .footer {
-    height: 5vh;
+    min-height: 5vh;
+    max-width: 1440px;
+    width: 80vw;
     background-color: chocolate;
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: contain;
+    justify-content: space-around;
 }
 
 .footer-link {
-    height:90%;
-    width: auto;
+    height: 80%;
+    padding-right: 50px;
+    color: bisque;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-link:visited {
+    color:rgb(225, 194, 154);
 }
 
 .nav {
@@ -108,8 +126,7 @@ body {
     list-style: none;    
 }
 
-.nav-item {
-    
+.nav-item {    
     background-color: chocolate;
     box-shadow: 0 0 10px 0 rgb(225, 194, 154);
     padding: 3px;
@@ -125,4 +142,16 @@ body {
 .nav-item:hover {
     border: 1px solid bisque;
     transition: 0.3s;
+}
+
+.footer-container {
+    padding: 7px 0 0 7px;
+}
+
+.contact-link {
+    color: brown;
+}
+
+.contact-link:hover {
+    color: chocolate;
 }

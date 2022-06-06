@@ -40,9 +40,11 @@
                 </li>
             </ul>
         </nav>
-        <section class="header-content">
+        <section class="header-conteiner">
             <h1>Aleksei Stoyanenko</h1>
-            <img src="assets/img/avatar.JPG" title="avatar" alt="My face when i'm trying to work with Git first time">
+            <div class="avatar-container">
+                <img class="avatar" src="assets/img/avatar.JPG" title="avatar" alt="My face when i'm trying to work with Git first time">
+            </div>
         </section>
     </header>
     <main class="main">
@@ -51,22 +53,22 @@
             <ul>
                 <li class="contact-item">
                     <p>Discord: 
-                        <a href="" title="Discord profile">Arclet#0589</a>
+                        <a href="" class="contact-link" title="Discord profile">Arclet#0589</a>
                     </p>
                 </li>
                 <li class="contact-item">
                     <p>E-mail: 
-                        <a href="mailto:stoynalex@gmail.com" title="E-mail">stoynalex@gmail.com</a>
+                        <a class="contact-link" href="mailto:stoynalex@gmail.com" title="E-mail">stoynalex@gmail.com</a>
                     </p>
                 </li>
                 <li class="contact-item">
                     <p>Telegram: 
-                        <a href="https://t.me/alexchel93" title="Telegram profile">@alexchel93</a>
+                        <a class="contact-link" href="https://t.me/alexchel93" title="Telegram profile">@alexchel93</a>
                     </p>
                 </li>
                 <li class="contact-item">
                     <p>GitHub: 
-                        <a href="https://github.com/Arclett" title="GitHub profile">Arclett</a>
+                        <a class="contact-link" href="https://github.com/Arclett" title="GitHub profile">Arclett</a>
                     </p>
                 </li>
             </ul>
@@ -86,7 +88,7 @@
         <div class="container" id="code">
             <h2>Code Example</h2>
            <pre>
-               <code class="code">
+               <code>
                 function multiply(a, b){
                     a * b
                 }
@@ -117,6 +119,10 @@
         </div>
     </main>
     <footer class="footer">
+        <div class="footer-container">
+            2022
+            <a class="footer-link" href="https://github.com/Arclett" title="GitHub link">Arclett</a>
+        </div>       
         <a href="https://rs.school/js/" title="JavaScript/Front-End Course">
             <img class="footer-link" alt="rsschool emblem" src="assets/img/rs_school_js.svg">
         </a>
