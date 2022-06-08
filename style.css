@@ -60,7 +60,7 @@ body {
 
 .container {
     width: 45%;
-    min-width: 400px;
+    min-width: 300px;
     height: 40%;
     background: linear-gradient(blanchedalmond, rgb(225, 194, 154), blanchedalmond);
     object-fit: content;
